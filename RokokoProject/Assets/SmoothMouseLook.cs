@@ -101,7 +101,7 @@ public class SmoothMouseLook : MonoBehaviour
                         else
                         {
                             print(p);
-                            cam.transform.localPosition = new Vector3(1, cam.transform.localPosition.y, Mathf.Lerp(-10, -1, p * 2.5f));
+                            cam.transform.localPosition = new Vector3(1, cam.transform.localPosition.y, Mathf.Lerp(-10, -2, p * 2.5f));
                         }
                     }
                     else
