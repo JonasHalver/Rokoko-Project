@@ -80,7 +80,7 @@ public class SmoothMouseLook : MonoBehaviour
             Quaternion yQuaternion = Quaternion.AngleAxis(rotAverageY, Vector3.left);
             Quaternion xQuaternion = Quaternion.AngleAxis(rotAverageX, Vector3.up);
 
-            if (dist < cam.transform.localPosition.y - 0.1f)
+            if (dist < cam.transform.localPosition.y + 0.1f)
             {
                 if (!sliding)
                 {
@@ -100,8 +100,7 @@ public class SmoothMouseLook : MonoBehaviour
                         }
                         else
                         {
-                            print(p);
-                            cam.transform.localPosition = new Vector3(1, cam.transform.localPosition.y, Mathf.Lerp(-10, -2, p * 2.5f));
+                            cam.transform.localPosition = new Vector3(1, cam.transform.localPosition.y, Mathf.Lerp(-10, -2f, p * 3f));
                         }
                     }
                     else
