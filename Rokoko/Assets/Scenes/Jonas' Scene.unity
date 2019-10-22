@@ -613,6 +613,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6341739626334869686, guid: 565514be70742574cad14c8b82d9b2d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -677,31 +702,6 @@ PrefabInstance:
         type: 3}
       propertyPath: obstacleMask.m_Bits
       value: 1536
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565514be70742574cad14c8b82d9b2d3, type: 3}
