@@ -556,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168218571}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24549869, y: 1.1960001, z: -2.6021483}
+  m_LocalPosition: {x: 0.24549869, y: 1.1960001, z: -2.6021488}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405591765}
@@ -1240,6 +1240,31 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4695666576454475813, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_Name
+      value: Lamp-S00A
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695666576454475813, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469484624682501897, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_Name
+      value: Chair-S00A
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469484624682501897, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4425609515867240179, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -520392401848222130, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1249,6 +1274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -7575616880344485308, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1606682004633592741, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
@@ -1505,26 +1535,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 56b0cb50af4d44ed8a588205b6524c26, type: 2}
-    - target: {fileID: 4695666576454475813, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_Name
-      value: Lamp-S00A
-      objectReference: {fileID: 0}
-    - target: {fileID: 4695666576454475813, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469484624682501897, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_Name
-      value: Chair-S00A
-      objectReference: {fileID: 0}
-    - target: {fileID: 7469484624682501897, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -2397996973257786244, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1574,16 +1584,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.632
-      objectReference: {fileID: 0}
-    - target: {fileID: -4425609515867240179, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7575616880344485308, guid: b7b710acdf99c4081a060faa8d130584,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7b710acdf99c4081a060faa8d130584, type: 3}
@@ -4266,6 +4266,59 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fe928cedae9af47a2972f1fcd2a99aad, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47ccefa76acf34e0cb6e25ac7a59e116, type: 3}
+--- !u!1 &1824514557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1824514559}
+  - component: {fileID: 1824514558}
+  m_Layer: 0
+  m_Name: Decal Projector (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1824514558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824514557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19d9143a39eb3b46bc4563e9889cfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: da203b2fbfd9b4e01884660f5bbe2e1f, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.94
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_AffectsTransparency: 0
+  m_Offset: {x: 0, y: 0, z: 0.5000001}
+  m_Size: {x: 13.24, y: 16.7, z: 1}
+  m_FadeFactor: 1
+  m_Version: 1
+--- !u!4 &1824514559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824514557}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -2.36, y: -1.78, z: -0.56}
+  m_LocalScale: {x: 1.4629, y: 1.6457626, z: 1.4629}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1847340766
 GameObject:
   m_ObjectHideFlags: 19
