@@ -10,15 +10,17 @@ public class SoundFX : MonoBehaviour
     public SoundLibrary soundLibrary;
     public enum Material { Wood, Glass, Metal }
     public Material material = Material.Wood;
-    public List<AudioClip> woodSounds = new List<AudioClip>();
-    public List<AudioClip> metalSounds = new List<AudioClip>();
-    public List<AudioClip> glassSounds = new List<AudioClip>();
+    List<AudioClip> woodSounds = new List<AudioClip>();
+    List<AudioClip> metalSounds = new List<AudioClip>();
+    List<AudioClip> glassSounds = new List<AudioClip>();
 
     AudioSource aS;
     Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag = "Interactable";
         aS = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
 
