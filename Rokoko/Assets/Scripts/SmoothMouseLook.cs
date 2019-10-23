@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SmoothMouseLook : MonoBehaviour
 {
-    public Camera cam; 
+    public Camera cam;
+    public float zoomDefault = -10;
 
     public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
     public RotationAxes axes = RotationAxes.MouseXAndY;
@@ -207,16 +208,21 @@ public class SmoothMouseLook : MonoBehaviour
     {
         Debug.DrawRay(transform.position, -transform.forward * 10);
         RaycastHit hit1;
-        if (Physics.Raycast(transform.position, -transform.forward, out hit1, 10, obstacleMask))
+        if (Physics.Raycast(transform.position, -transform.forward, out hit1, -zoomDefault, obstacleMask))
         {
             Vector3 hitDir = (hit1.point - transform.position).normalized;
             float hitDst = -Vector3.Distance(hit1.point, transform.position);
-            hitDst = Mathf.Clamp(hitDst, -10, -2);
+            hitDst = Mathf.Clamp(hitDst, zoomDefault, -2);
             viablePosition = new Vector3(0, 0, hitDst + 1);
         }
         else
         {
-            viablePosition = new Vector3(0, 0, -10);
+            viablePosition = new Vector3(0, 0, zoomDefault);
         }
+    }
+
+    private void OnValidate()
+    {
+        cam.transform.localPosition = new Vector3(1, 0, zoomDefault);
     }
 }

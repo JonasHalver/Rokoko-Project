@@ -360,9 +360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundLibrary: {fileID: 11400000, guid: 47c48af3e7de66246a868e9f8c2ad9c8, type: 2}
   material: 0
-  woodSounds: []
-  metalSounds: []
-  glassSounds: []
 --- !u!82 &470587716
 AudioSource:
   m_ObjectHideFlags: 0
@@ -812,6 +809,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 6341739626421987055, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739626421987055, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739626421987055, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6341739627019798895, guid: 565514be70742574cad14c8b82d9b2d3,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -901,6 +913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: obstacleMask.m_Bits
       value: 1536
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341739627164040760, guid: 565514be70742574cad14c8b82d9b2d3,
+        type: 3}
+      propertyPath: zoomDefault
+      value: -5.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565514be70742574cad14c8b82d9b2d3, type: 3}
