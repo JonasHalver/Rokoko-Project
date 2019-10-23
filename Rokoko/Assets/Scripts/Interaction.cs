@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    public float force = 5;
+    public float force = 5, upForce = 1;
     public Rigidbody rb;
     public Transform hand;
     public LayerMask handLayer, ignoreLayer;
@@ -33,7 +33,7 @@ public class Interaction : MonoBehaviour
         {
             print("Punch!");
             Vector3 dir = (collision.GetContact(0).point - transform.position).normalized;
-            collision.rigidbody.AddForceAtPosition(dir * force, collision.GetContact(0).point, ForceMode.Impulse);
+            collision.rigidbody.AddForceAtPosition(dir * force + Vector3.up * upForce, collision.GetContact(0).point, ForceMode.Impulse);
         }
         else
             print("notPunch");

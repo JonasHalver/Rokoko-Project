@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 2;
     public Transform cameraHolder;
-    public Rigidbody rb;
+    public 
+        
+        Rigidbody rb;
     Vector3 newFwd, newLeft;
 
     // Start is called before the first frame update

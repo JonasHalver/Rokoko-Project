@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4552414e450b5cf4baaf73ec614aa7e0, type: 3}
+  m_Name: Sounds
+  m_EditorClassIdentifier: 
+  woodSounds:
+  - {fileID: 8300000, guid: 889c38bb083f55848b10bfe98ed7e29a, type: 3}
+  - {fileID: 8300000, guid: bac6b0a7cf097ec47827bb6293043a43, type: 3}
+  - {fileID: 8300000, guid: 1a9d9f2f5eb94ed46ae3077045b47f17, type: 3}
+  metalSounds:
+  - {fileID: 8300000, guid: 3298a257412b0d1418ea349b0d5f3848, type: 3}
+  - {fileID: 8300000, guid: 86d3da5dc72feb64389c2f0aa0455d7f, type: 3}
+  - {fileID: 8300000, guid: 6b1728f25601e7c449c0bf6f969057d9, type: 3}
+  - {fileID: 8300000, guid: 64e6efd9fe647344e8568cd60b4164d7, type: 3}
+  glassSounds:
+  - {fileID: 8300000, guid: d61feeeae65224e41ae8e374933582a2, type: 3}
