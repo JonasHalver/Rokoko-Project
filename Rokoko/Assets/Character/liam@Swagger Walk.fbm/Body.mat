@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Body
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _MASKMAP _MATERIAL_FEATURE_SUBSURFACE_SCATTERING _MATERIAL_FEATURE_TRANSMISSION
-    _NORMALMAP _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _DISABLE_DECALS _MASKMAP _MATERIAL_FEATURE_SUBSURFACE_SCATTERING
+    _MATERIAL_FEATURE_TRANSMISSION _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -180,7 +180,7 @@ Material:
     - _MaterialID: 0
     - _Metallic: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 0.77
+    - _NormalScale: 1.31
     - _PPDLodThreshold: 5
     - _PPDMaxSamples: 15
     - _PPDMinSamples: 5
@@ -190,8 +190,8 @@ Material:
     - _RefractionModel: 0
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0.368
-    - _SmoothnessRemapMax: 1
-    - _SmoothnessRemapMin: 0.08760108
+    - _SmoothnessRemapMax: 0.34669638
+    - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.44
     - _SpecularAAThreshold: 0.2
     - _SrcBlend: 1
@@ -206,7 +206,7 @@ Material:
     - _StencilWriteMaskGBuffer: 51
     - _StencilWriteMaskMV: 176
     - _SubsurfaceMask: 1
-    - _SupportDecals: 1
+    - _SupportDecals: 0
     - _SurfaceType: 0
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
