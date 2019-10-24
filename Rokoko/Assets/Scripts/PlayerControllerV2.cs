@@ -27,8 +27,12 @@ public class PlayerControllerV2: MonoBehaviour {
     List<string> specials = new List<string>();
     public static bool isPunching;
 
+    AudioSource aS;
+    public AudioClip woosh;
+
     // Use this for initialization
     void Start () {
+        aS = GetComponent<AudioSource>();
         leftPunches.AddRange(animations.leftPunches);
         rightPunches.AddRange(animations.rightPunches);
         specials.AddRange(animations.specials);
@@ -104,13 +108,14 @@ public class PlayerControllerV2: MonoBehaviour {
 
     public void StartPunch()
     {
-        print("Started punch");
+        aS.pitch += Random.Range(-0.2f, 0.2f);
+        aS.PlayOneShot(woosh);
+        aS.pitch = 1;
         isPunching = true;
     }
 
     public void EndPunch()
     {
-        print("Ended punch");
         isPunching = false;
     }
 

@@ -9,9 +9,13 @@ public class Interaction : MonoBehaviour
     public Transform hand;
     public LayerMask handLayer, ignoreLayer;
 
+    AudioSource aS;
+    public AudioClip whack;
+
     // Start is called before the first frame update
     void Start()
     {
+        aS = GetComponent<AudioSource>();
         Physics.IgnoreLayerCollision(11, 12);
     }
 
@@ -33,12 +37,12 @@ public class Interaction : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Interactable"))
             {
-                print("Punch!");
                 Vector3 dir = (collision.GetContact(0).point - transform.position).normalized;
                 collision.rigidbody.AddForceAtPosition(dir * force + Vector3.up * upForce, collision.GetContact(0).point, ForceMode.Impulse);
+                aS.pitch += Random.Range(-0.2f, 0.2f);
+                aS.PlayOneShot(whack);
+                aS.pitch = 1;
             }
-            else
-                print("notPunch");
         }
     }
 }
