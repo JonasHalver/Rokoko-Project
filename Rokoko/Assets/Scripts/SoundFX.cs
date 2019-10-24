@@ -44,10 +44,10 @@ public class SoundFX : MonoBehaviour
                 clip = woodSounds[Random.Range(0, woodSounds.Count)];
                 break;
             case Material.Metal:
-                clip = woodSounds[Random.Range(0, metalSounds.Count)];
+                clip = metalSounds[Random.Range(0, metalSounds.Count)];
                 break;
             case Material.Glass:
-                clip = woodSounds[Random.Range(0, glassSounds.Count)];
+                clip = glassSounds[Random.Range(0, glassSounds.Count)];
                 break;
         }
         return clip;

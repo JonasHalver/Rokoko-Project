@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 101.11684, g: 161.98337, b: 221.34654, a: 1}
+  m_IndirectSpecularColor: {r: 103.7424, g: 166.93881, b: 223.93698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3912,8 +3912,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.3903288, z: 0.3181493}
-  m_Center: {x: 0, y: 0.19501893, z: 0.0037827387}
+  m_Size: {x: 0.32888547, y: 0.3903288, z: 0.3181493}
+  m_Center: {x: 0.0014487061, y: 0.19501893, z: 0.0037827387}
 --- !u!1 &392539763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,10 +4393,20 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 579778783384476772, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6319955532516243554, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319955532516243554, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4695666576454475813, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
@@ -4422,6 +4432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469484624682501897, guid: b7b710acdf99c4081a060faa8d130584,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4425609515867240179, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
@@ -4676,7 +4691,7 @@ PrefabInstance:
     - target: {fileID: -1503462057161404876, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.13
+      value: -0.067
       objectReference: {fileID: 0}
     - target: {fileID: 4644072650634059938, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
@@ -4776,22 +4791,22 @@ PrefabInstance:
     - target: {fileID: 2498326036907817780, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.5841604
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2498326036907817780, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: -0.5841604
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2498326036907817780, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: -0.5841604
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2498326036907817780, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.182
+      value: 0.392
       objectReference: {fileID: 0}
     - target: {fileID: 2498326036907817780, guid: b7b710acdf99c4081a060faa8d130584,
         type: 3}
@@ -4888,8 +4903,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4723.1235, y: 0, z: 15.617119}
-  m_Center: {x: -2358.658, y: -1, z: 4.6171303}
+  m_Size: {x: 4723.1235, y: 1, z: 15.617119}
+  m_Center: {x: -2358.658, y: -1.52, z: 4.6171303}
 --- !u!1 &466219622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6319955532516243554, guid: b7b710acdf99c4081a060faa8d130584,
@@ -5137,20 +5152,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!64 &466219631
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 466219623}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!1 &467347700
 GameObject:
   m_ObjectHideFlags: 0
@@ -9478,7 +9479,7 @@ BoxCollider:
   m_GameObject: {fileID: 931139063}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18181,7 +18182,7 @@ BoxCollider:
   m_GameObject: {fileID: 1816353546}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
