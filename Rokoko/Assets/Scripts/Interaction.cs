@@ -29,13 +29,16 @@ public class Interaction : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Interactable"))
+        if (PlayerControllerV2.isPunching)
         {
-            print("Punch!");
-            Vector3 dir = (collision.GetContact(0).point - transform.position).normalized;
-            collision.rigidbody.AddForceAtPosition(dir * force + Vector3.up * upForce, collision.GetContact(0).point, ForceMode.Impulse);
+            if (collision.gameObject.CompareTag("Interactable"))
+            {
+                print("Punch!");
+                Vector3 dir = (collision.GetContact(0).point - transform.position).normalized;
+                collision.rigidbody.AddForceAtPosition(dir * force + Vector3.up * upForce, collision.GetContact(0).point, ForceMode.Impulse);
+            }
+            else
+                print("notPunch");
         }
-        else
-            print("notPunch");
     }
 }

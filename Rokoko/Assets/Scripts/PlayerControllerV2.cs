@@ -25,6 +25,7 @@ public class PlayerControllerV2: MonoBehaviour {
     List<string> leftPunches = new List<string>();
     List<string> rightPunches = new List<string>();
     List<string> specials = new List<string>();
+    public static bool isPunching;
 
     // Use this for initialization
     void Start () {
@@ -99,6 +100,18 @@ public class PlayerControllerV2: MonoBehaviour {
             if (s != trigger)
                 anim.ResetTrigger(s);
         }
+    }
+
+    public void StartPunch()
+    {
+        print("Started punch");
+        isPunching = true;
+    }
+
+    public void EndPunch()
+    {
+        print("Ended punch");
+        isPunching = false;
     }
 
     private void OnAnimatorIK(int layerIndex)
