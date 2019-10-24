@@ -22,6 +22,7 @@ public class SoundFX : MonoBehaviour
     {
         gameObject.tag = "Interactable";
         aS = GetComponent<AudioSource>();
+        aS.spatialBlend = 1;
         rb = GetComponent<Rigidbody>();
 
         woodSounds.AddRange(soundLibrary.woodSounds);
@@ -55,6 +56,8 @@ public class SoundFX : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        aS.pitch += Random.Range(-0.2f, 0.2f);
         aS.PlayOneShot(PickSoundEffect());
+        aS.pitch = 1;
     }
 }

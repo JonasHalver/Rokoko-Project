@@ -21,8 +21,16 @@ public class PlayerControllerV2: MonoBehaviour {
 
     public Transform lookAtThis;
 
+    public AnimLibrary animations;
+    List<string> leftPunches = new List<string>();
+    List<string> rightPunches = new List<string>();
+    List<string> specials = new List<string>();
+
     // Use this for initialization
     void Start () {
+        leftPunches.AddRange(animations.leftPunches);
+        rightPunches.AddRange(animations.rightPunches);
+        specials.AddRange(animations.specials);
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         Cursor.visible = false;
@@ -53,20 +61,50 @@ public class PlayerControllerV2: MonoBehaviour {
         anim.SetFloat("forward", vertical, .05f, Time.deltaTime);
         anim.SetFloat("turn", horizontal, .05f, Time.deltaTime);
 
-        if(Input.GetMouseButtonDown(0)){
-            anim.SetTrigger("primary");
+        if (Input.GetMouseButtonDown(0))
+        {
+            int l = Random.Range(0, leftPunches.Count);
+            ResetTriggers(leftPunches[l]);
+            anim.SetTrigger(leftPunches[l]);
         }
 
-        if(Input.GetMouseButtonDown(1)){
-            anim.SetTrigger("secondary");
+        if (Input.GetMouseButtonDown(1))
+        {
+            int r = Random.Range(0, rightPunches.Count);
+            ResetTriggers(rightPunches[r]);
+            anim.SetTrigger(rightPunches[r]);
         }
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            int s = Random.Range(0, specials.Count);
+            ResetTriggers(specials[s]);
+            anim.SetTrigger(specials[s]);
+        }
     }
- 
-       private void OnAnimatorIK(int layerIndex)
+
+    void ResetTriggers(string trigger)
+    {
+        foreach (string s in leftPunches)
+        {
+            if (s != trigger)
+                anim.ResetTrigger(s);
+        }
+        foreach (string s in rightPunches)
+        {
+            if (s != trigger)
+                anim.ResetTrigger(s);
+        }
+        foreach(string s in specials)
+        {
+            if (s != trigger)
+                anim.ResetTrigger(s);
+        }
+    }
+
+    private void OnAnimatorIK(int layerIndex)
     {
         float distanceFaceObject = Vector3.Distance(anim.GetBoneTransform(HumanBodyBones.Head).position, lookAtThis.position);
-           
+
         anim.SetLookAtPosition(lookAtThis.position);
 
         anim.SetLookAtWeight(Mathf.Clamp01(5 - distanceFaceObject), Mathf.Clamp01(1 - distanceFaceObject));

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Sound Library", menuName ="Library")]
+[CreateAssetMenu(fileName = "Sound Library", menuName ="Library/Sounds")]
 public class SoundLibrary : ScriptableObject
 {
     public List<AudioClip> woodSounds = new List<AudioClip>();
