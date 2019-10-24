@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Environment/Environment Art Test.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: Assets/Scenes/MainMenu.unity
+    guid: c0a9042a1cf8e4c4994d2dca54544757
+  - enabled: 1
+    path: Assets/Scenes/JAneks Environment.unity
+    guid: 17c7a000432a8f94881cec5da2882be1
   m_configObjects: {}
