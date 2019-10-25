@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fe7c3a0af4b904e2595a42106745e5ff
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KBH Tekst
+  fontNames:
+  - KBH Tekst
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9e8c4aecc033949f7b0797da915bd7ed, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
