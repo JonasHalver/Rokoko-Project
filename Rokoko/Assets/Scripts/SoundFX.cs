@@ -24,6 +24,7 @@ public class SoundFX : MonoBehaviour
         aS = GetComponent<AudioSource>();
         aS.spatialBlend = 1;
         rb = GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
         woodSounds.AddRange(soundLibrary.woodSounds);
         metalSounds.AddRange(soundLibrary.metalSounds);
