@@ -44,5 +44,6 @@ public class Interaction : MonoBehaviour
                 aS.pitch = 1;
             }
         }
+        ScoreManager.AddPoints(rb.velocity.magnitude);
     }
 }
