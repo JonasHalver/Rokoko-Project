@@ -27,6 +27,8 @@ public class PlayerControllerV2: MonoBehaviour {
     List<string> specials = new List<string>();
     public static bool isPunching;
 
+    public Collider foot;
+
     AudioSource aS;
     public AudioClip woosh;
 
@@ -106,17 +108,21 @@ public class PlayerControllerV2: MonoBehaviour {
         }
     }
 
-    public void StartPunch()
+    public void StartPunch(string type)
     {
         aS.pitch += Random.Range(-0.2f, 0.2f);
         aS.PlayOneShot(woosh);
         aS.pitch = 1;
         isPunching = true;
+        if (type == "kick")
+            foot.enabled = true;
     }
 
-    public void EndPunch()
+    public void EndPunch(string type)
     {
         isPunching = false;
+        if (type == "kick")
+            foot.enabled = false;
     }
 
     private void OnAnimatorIK(int layerIndex)
