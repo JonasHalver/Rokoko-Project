@@ -45,6 +45,7 @@ public class PlayerControllerV2: MonoBehaviour {
  
     private void Update()
     {
+        Cursor.visible = PauseMenu.paused;
         // reset movement
         moveDirection = Vector3.zero;
         // get vertical and horizontal movement input (controller and WASD/ Arrow Keys)
