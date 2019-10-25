@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 103.7424, g: 166.93835, b: 223.93655, a: 1}
+  m_IndirectSpecularColor: {r: 103.40969, g: 166.47482, b: 223.85861, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3120,10 +3120,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 756236816229170528, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 756236816319496268, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 756236816229170530, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
@@ -3134,6 +3139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: force
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 756236816229170531, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 756236816319496265, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
@@ -3160,6 +3170,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.061506297
       objectReference: {fileID: 0}
+    - target: {fileID: 756236816319496265, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 756236816319496270, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
       propertyPath: ignoreLayer.m_Bits
@@ -3174,6 +3189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: force
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 756236816319496271, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 756236816809554760, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
@@ -3205,6 +3225,11 @@ PrefabInstance:
       propertyPath: force
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 756236816809554766, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 756236816919319022, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
       propertyPath: m_Size.x
@@ -3225,6 +3250,16 @@ PrefabInstance:
       propertyPath: force
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 756236816919319020, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977748900779850997, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5943858668251832890, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
       propertyPath: m_IsActive
@@ -3235,6 +3270,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 2060239707816024791, guid: d3fc42ef63a8b9b44903b40d802b0393,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 86795c6bf35d169498540564ac8f2ae7, type: 2}
     - target: {fileID: 5943858668251832888, guid: d3fc42ef63a8b9b44903b40d802b0393,
         type: 3}
       propertyPath: zoomDefault
